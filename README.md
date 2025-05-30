@@ -42,6 +42,8 @@ Opsi ```-n``` pada perintah kubectl get digunakan untuk menentukan namespace tem
 
 ```strategy.type: Recreate``` pada ```recreate.yml``` menunjukkan bahwa deployment ini akan menggunakan strategi Recreate, yang berarti semua pod yang sedang berjalan akan dihentikan terlebih dahulu sebelum pod baru dijalankan.
 
+![Endpoint Petclinic](endpoint-petclinic.png)
+
 *4. What do you think are the benefits of using Kubernetes manifest files? Recall your experience in deploying the app manually and compare it to your experience when deploying the same app by applying the manifest files (i.e., invoking `kubectl apply-f` command) to the cluster.*
 
 Saat melakukan deployment manual, kita perlu mengingat langkah-langkah spesifik untuk membuat pod, layanan, dan komponen lainnya, yang berisiko terjadinya kesalahan. Dengan manifest file, deployment menjadi lebih terstruktur dan dapat diulang. Setelah pertama kali menulis manifest file, kita cukup menjalankan perintah ```kubectl apply -f``` untuk menerapkannya. Hal ini mengurangi risiko kesalahan manual dan memudahkan pengelolaan aplikasi dalam jangka panjang.
